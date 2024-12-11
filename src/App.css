@@ -651,55 +651,76 @@ marquee {
 }
 
 /* Extra Small Mobile Devices */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .navbar-container {
     flex-direction: column;
-    height: auto;
+    height: 100px;
     padding: 5px;
+    align-items: center;
   }
 
   .navbar-title {
-    font-size: 1rem;
+    font-size: 1.0rem;
   }
 
   .prefix {
-    font-size: 0.8rem;
+    font-size: 1.0rem;
+    
+    
   }
 
   .logo {
-    width: 25px;
-    height: 25px;
+    margin-left: -50px;
+    width: 5px;
+    height: 5px;
   }
 
   .nav-list {
-    flex-direction: column;
-    padding: 5px 0;
-  }
+    flex-direction: row;
+    margin-left: -10px;
 
+  }
+  .contact1{
+    margin-top: -200px;
+    width: 100%;
+    padding-left:0px;
+  }
+  .contact{
+    height:1000px;
+  }
+  .contact2{
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  .copyrights{
+  margin-top: 80px;
+  }
+ 
   .navitem a {
     font-size: 0.9rem;
+    gap: 0px;
+    margin-left: -10px;
   }
-
-  .services {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 5px;
+  .v{
+    margin-left: 50px;
   }
+  .services{
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    padding-bottom: 20px;
+ }
 
   .productImg {
-    width: 350px;
-    height: 300px;
+   width: 150px;
+    height: 130px;
   }
-
-  .about {
-    margin: 10px 5px;
+  .cards{
+    width:150px;
   }
-
-  .founder {
-    width: 150px;
-    height: 200px;
-  }
-
   .contact iframe {
     height: 150px;
   }
@@ -713,3 +734,7 @@ marquee {
     font-size: 0.8rem;
   }
 }
+
+
+
+
