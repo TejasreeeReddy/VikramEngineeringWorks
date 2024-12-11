@@ -100,7 +100,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src="./bg5.jpg" className="d-block w-100" alt="..." />
+            <img src="./bg6.webp" className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5>Delivering Quality Products with Cutting-Edge Technology</h5>
               <p>
@@ -140,9 +140,11 @@ const Navbar = () => {
       </div>
       
       <Connect />
+      <div className="copy">
       <marquee>
         <Copyrights />
       </marquee>
+      </div>
     </div>
   );
 };

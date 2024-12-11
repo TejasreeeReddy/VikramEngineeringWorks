@@ -85,14 +85,16 @@ const Contact = () => {
       <input type='text'></input><br></br>
       <label id="email">Email:</label>
       <input type="email"></input><br></br>
-      <label id="message">Write your Query:</label><br></br>
+      <label id="message">Write your Query:</label>
       <textarea cols='45' rows="5" placeholder="type here..."></textarea><br></br>
       <button type="button" className="btn btn-secondary">Submit</button>
     </form>
     </div>
-      <marquee>
-        <Copyrights />
-      </marquee>
+    <div className="copy">
+    <marquee>
+      <Copyrights />
+    </marquee>
+    </div>
     </div>
   );
 };

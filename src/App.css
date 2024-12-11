@@ -1,11 +1,11 @@
-/* .navbar-container {
+.navbar-container {
   position: fixed;
  display: flex;
  flex-direction: row;
  align-items: flex-end;  
  height: 70px;
  background-color: #f8f8f8;
-  } */
+  }
   
   .navbar-header {
     display: flex;
@@ -129,7 +129,7 @@
     font-style: normal;
   }
 
-  /*contact page styling*/
+
   .container{
   color:#f8f8f8;
   padding:20px;
@@ -138,6 +138,7 @@
 
   }
   .contact{
+    height: 500px;
     display: flex;
     flex-direction: column;
     padding-left: 60px;
@@ -152,10 +153,12 @@
     font-style: normal;
   }
   .contact1{
-    margin-top: -160px;
+    margin-top: -130px;
     align-items: center;
     width: 50%;
     padding-right: 0%;
+    margin-left: 50px;
+    color:#f8f8f8
 
   
   }
@@ -209,23 +212,30 @@
     background-color: #067ccb;
     color:#e56c1b;
   }
-/*about page*/
+
   .about{
     display: flex;
     color:#000000;
     margin:100px;
-  
-    margin-right: 100px;
+    padding-top: 50px;
+    
     gap: 30px;
-    font-weight: lighter;
+    font-weight: 350;
     font-family: "Merriweather Sans", serif;
     font-optical-sizing: auto;
     word-spacing: 4px;
     width: 90%;
     
   }
+  .cards{
+    width: 350px;
+  }
+  .owner{
+    color:#e56c1b
+  }
 
   .v{
+    margin-left: 200px;
     color: #067ccb;
     font-size: 25px;
     font-weight:400px;
@@ -236,7 +246,7 @@
     width: 300px;
     height: 350px;
   }
-  /*services page*/
+
 
   .services{
     margin-top: 10px;
@@ -278,11 +288,14 @@
 .service ul li:hover{
   color:#e56c1b;
 }
-/*contact page*/
+
 
 .contactpage{
   margin-top:80px;
   border-bottom: 1px solid black;
+  font-family: "Merriweather Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
 
 }
 .contacttitle{
@@ -364,52 +377,339 @@ marquee {
   color: #fff;
   padding: 5px 0;
 }
-
-
-/* Base Styles */
-.navbar-container {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  height: 70px;
-  background-color: #f8f8f8;
-}
-
-/* Mobile (Max Width: 576px) */
-@media (max-width: 576px) {
+/* General Adjustments */
+@media (max-width: 1200px) {
   .navbar-container {
-    flex-direction: column;
-    height: auto;
-    align-items: center;
+    padding: 0 20px;
+    height: 60px;
   }
 
   .navbar-title {
+    font-size: 1.8rem;
+  }
+
+  .prefix {
     font-size: 1.5rem;
   }
 
-  .nav-list {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding-left: 20px;
+  }
+
+  .service {
+    padding: 30px;
+  }
+
+  .productImg {
+    width: 300px;
+    height: 200px;
+  }
+
+  .contact iframe {
+    height: 300px;
+  }
+}
+
+/* Tablet Devices */
+@media (max-width: 1024px) {
+  .navbar-container {
     flex-direction: column;
     align-items: center;
+    height: 150px;
+    padding: 15px 0;
+  }
+  .logo{
+    width: 100px;
+  }
+  .nav-list {
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    margin-left: 450px;
+  }
+  .nav-item{
+    margin-top: -20px;
+  
+  }
+
+  .navbar-title {
+    padding-top: 10px;
+    font-size: 2.5rem;
+  }
+
+  .prefix {
+    font-size: 2.5rem;
+  }
+
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-left: 10px;
+  }
+
+  .service {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact iframe {
+    height: 250px;
+  }
+  .contact{
+    height: 650px;
+  }
+  
+  .contact2{
+    display: flex;
+    flex-direction: row;
+    padding-right: 0%;
+    align-items: center;
+    width: 50%;
+    
+  
+  }
+  .about {
+    flex-direction: column;
+    margin-left: 60px;
+    gap: 20px;
+
+  }
+
+  .founder {
+    margin-top: 30px;
+    width: 250px;
+    height: 300px;
+  }
+
+  .aboutfounder{
+    margin-top: -60px;
+    font-weight:370;
+    padding-bottom: 30px;
+    border-bottom:#067ccb 1px solid;
+   }
+
+  .services{
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding-bottom: 20px;
+ }
+
+ .productImg {
+  
+  width: 250px;
+  height: 200px;
+}
+.cards{
+  width:250px
+}
+
+  .contactpage{
+    padding-left: 20px;
+  }
+  .timings{
+    padding-left: 20px;
+  }
+  .reason{
+    padding-left: 20px;
+  }
+  .query{
+    padding-left: 20px;
+  }
+ #form{
+  width: 50%;
+ }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 10px 5px;
+    height: 150px;
+  }
+   .navbar-header .logo{
+    padding: 5px;
+    width: 70px;
+    height: auto;
+   }
+  .navbar-title {
+    margin-top: 20px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
+  }
+ 
+  .prefix {
+    font-size: 2rem;
+    
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-list {
+    margin-top: -20px;
+    margin-left: 60px;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .navitem a {
+    font-size: 1rem;
+   
   }
 
   .services {
     grid-template-columns: 1fr;
     gap: 10px;
+    padding-left: 0;
+  
   }
-}
+  .service{
+    width: 80%;
+  }
 
-/* Tablets (Max Width: 768px) */
-@media (max-width: 768px) {
-  .services {
+ 
+  .about{
+  padding-left: 5px;
+  width: 80%;
+
+  
+  }
+ .aboutfounder{
+  margin-top: -60px;
+  font-weight:370;
+  padding-bottom: 30px;
+  border-bottom:#067ccb 1px solid;
+ }
+
+  .contact{
+    height: 600px;
+    background-color: #000000;
+    padding-left: 50px
+  }
+  .contact1{
+   
+    color: #f8f8f8;
+
+  }
+  .contact2{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .contact iframe{
+    height: 150px;
+    width: 200px;
+  }
+ .copyrights{
+ padding-top: 10px;
+ }
+ .services{
+    margin-left: 70px;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 20px; 
+    padding-bottom: 20px;
+ }
+ .para{
+  font-size: 1.2rem;
+ }
+
+ .productImg {
+  
+  width: 200px;
+  height: 150px;
+}
+.cards{
+  width:200px;
+}
+.contactpage{
+  margin-left: 20px;
+}
+.timings{
+  margin-left: 20px;
+}
+.reason {
+  margin-left: 20px;
+}
+.query{
+  margin-left: 20px;
+}
+
+  #form {
+    width: 70%;
   }
 }
 
-/* Desktops (Max Width: 992px) */
-@media (max-width: 992px) {
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+  }
+
+  .navbar-title {
+    font-size: 1rem;
+  }
+
+  .prefix {
+    font-size: 0.8rem;
+  }
+
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 5px 0;
+  }
+
+  .navitem a {
+    font-size: 0.9rem;
+  }
+
   .services {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .productImg {
+    width: 350px;
+    height: 300px;
+  }
+
+  .about {
+    margin: 10px 5px;
+  }
+
+  .founder {
+    width: 150px;
+    height: 200px;
+  }
+
+  .contact iframe {
+    height: 150px;
+  }
+
+  input {
+    width: 95%;
+    height: 30px;
+  }
+
+  label {
+    font-size: 0.8rem;
   }
 }

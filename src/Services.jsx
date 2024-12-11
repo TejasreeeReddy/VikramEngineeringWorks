@@ -44,7 +44,7 @@ const Services = () => {
       </div>
       </div>
        <div className="services">
-       <div className="card" style={{width: "22rem"}}>
+       <div className="card cards" >
        <img src="./turning.jpg" className="card-img-top productImg" alt="..." />
        <div className="card-body">
         <p className="productTittle">Turning</p>
@@ -52,7 +52,7 @@ const Services = () => {
        </div>
      </div>
 
-     <div className="card" style={{width: "22rem"}}>
+     <div className="card cards" >
      <img src="./welding.jpg" className="card-img-top productImg" alt="..." />
      <div className="card-body">
      <p className="productTittle">Welding</p>
@@ -60,7 +60,7 @@ const Services = () => {
      </div>
    </div>
 
-   <div className="card" style={{width: "22rem"}}>
+   <div className="card cards">
    <img src="./milling.avif" className="card-img-top productImg" alt="..." />
    <div className="card-body">
    <p className="productTittle">Milling</p>
@@ -68,7 +68,7 @@ const Services = () => {
    </div>
  </div>
 
- <div className="card" style={{width: "22rem"}}>
+ <div className="card cards">
  <img src="./slotting.jpg" className="card-img-top productImg" alt="..." />
  <div className="card-body">
  <p className="productTittle">Slotting</p>
@@ -76,7 +76,7 @@ const Services = () => {
  </div>
 </div>
 
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards" >
 <img src="./GasCutting.jpg" className="card-img-top productImg" alt="..." />
 <div className="card-body">
 <p className="productTittle">Gas Cutting</p>
@@ -84,7 +84,7 @@ const Services = () => {
 </div>
 </div>
 
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards" >
 <img src="./drilling.jpg" className="card-img-top productImg" alt="..." />
 <div className="card-body">
 <p className="productTittle">Drilling</p>
@@ -92,76 +92,76 @@ const Services = () => {
 </div>
 </div>
 
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards" >
 <img src="./jawCrasher.jpg" className="card-img-top productImg" alt="..." />
 <div className="card-body">
   <p className="productTittle">Jaw Crasher</p>
 </div>
 </div>
 
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards" >
 <img src="./coneCrusher.jpg" className="card-img-top productImg" alt="..." />
 <div className="card-body">
   <p className="productTittle">Cone Crusher</p>
 </div>
 </div>
 
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards" >
 <img src="./vibraterScreen.jpg" className="card-img-top productImg" alt="..." />
 <div className="card-body">
   <p className="productTittle">Vibrator Screen</p>
 </div>
 </div>
 
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards" >
 <img src="./verticalShaftImpact.jpg" className="card-img-top productImg" alt="..." />
 <div className="card-body">
  <p className="productTittle">Vertical Shaft Impact</p>
 </div>
 </div>
 
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards">
 <img src="./feeder1.webp" className="card-img-top productImg" alt="..." />
 <div className="card-body">
   <p className="productTittle">Feeder</p>
 </div>
 </div>
 
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards" >
 <img src="./conveyer1.webp" className="card-img-top productImg" alt="..." />
 <div className="card-body">
   <p className="productTittle">Conveyor</p>
 </div>
 </div>
 
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards " >
 <img src="./ssRoles.png" className="card-img-top productImg" alt="..." />
 <div className="card-body">
  <p className="productTittle">Stainless Steel Rolls</p>
 </div>
 </div>
 
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards" >
 <img src="./pressRolls.jpg" className="card-img-top productImg" alt="..." />
 <div className="card-body">
   <p className="productTittle">Press Rolls</p>
 </div>
 </div>
 
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards" >
 <img src="./rubberRolls.jpg" className="card-img-top productImg" alt="..." />
 <div className="card-body">
   <p className="productTittle">Rubber Rolls</p>
 </div>
 </div>
 
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards" >
 <img src="./calenderRolls.jpg" className="card-img-top productImg" alt="..." />
 <div className="card-body">
   <p className="productTittle">Calender Rolls</p>
 </div>
 </div>
-<div className="card" style={{width: "22rem"}}>
+<div className="card cards" >
 <img src="./eboniterolls.jpg" className="card-img-top productImg" alt="..." />
 <div className="card-body">
   <p className="productTittle">Ebonite Rolls</p>
@@ -169,9 +169,11 @@ const Services = () => {
 </div>
        
        </div>
-      <marquee>
-        <Copyrights />
-      </marquee>
+       <div className="copy">
+       <marquee>
+         <Copyrights />
+       </marquee>
+       </div>
     </div>
   );
 };
