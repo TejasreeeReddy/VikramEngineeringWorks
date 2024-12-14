@@ -216,9 +216,9 @@
   .about{
     display: flex;
     color:#000000;
-    margin:100px;
+    margin-top: 100px;
     padding-top: 50px;
-    
+    margin-left: 40px;
     gap: 30px;
     font-weight: 350;
     font-family: "Merriweather Sans", serif;
@@ -266,7 +266,7 @@
     margin-top: 100px;
     padding: 40px;
     gap:40px;
-    margin-left: 30px;
+
     border-radius: 10px;
     font-family: "Merriweather Sans", serif;
     font-optical-sizing: auto;
@@ -579,8 +579,8 @@ marquee {
 
  
   .about{
-  padding-left: 5px;
-  width: 80%;
+
+  width: 90%;
 
   
   }
@@ -670,14 +670,14 @@ marquee {
   }
 
   .logo {
-    margin-left: -50px;
+    margin-left: -100px;
     width: 5px;
     height: 5px;
   }
 
   .nav-list {
     flex-direction: row;
-    margin-left: -10px;
+   margin-left: -30px;
 
   }
   .contact1{
@@ -707,11 +707,15 @@ marquee {
     margin-left: 50px;
   }
   .services{
-    margin-left: 70px;
+    margin-left: 40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px; 
     padding-bottom: 20px;
+ }
+ .aboutfounder{
+  margin: 5px;
+  margin-top: -100px;
  }
 
   .productImg {
